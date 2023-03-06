@@ -104,18 +104,18 @@ function MANIPULATION_FRAME:Init()
 	self.rotation_functions_tab = vgui.Create( "PA_Rotation_Functions_Tab", self.body )
 	self.constraints_tab = vgui.Create( "PA_Constraints_Tab", self.body )
 
-	self.panel:AddSheet( "Display Options", self.displays_tab, "gui/silkicons/picture_edit", false, false )
-	self.panel:AddSheet( "Points", self.points_tab, "gui/silkicons/add", false, false )
-		self.points_tab.tab = self.panel.Items[2].Tab
-	self.panel:AddSheet( "Lines", self.lines_tab, "gui/silkicons/check_on", false, false )
-		self.lines_tab.tab = self.panel.Items[3].Tab
-	self.panel:AddSheet( "Planes", self.planes_tab, "gui/silkicons/world", false, false )
-		self.planes_tab.tab = self.panel.Items[4].Tab
-	self.panel:AddSheet( "Move Constructs", self.move_tab, "gui/silkicons/folder_go", false, false )
-	self.panel:AddSheet( "Functions", self.functions_tab, "gui/silkicons/plugin", false, false )
-	self.panel:AddSheet( "Rotation", self.rotation_tab, "gui/silkicons/arrow_refresh", false, false )
-	self.panel:AddSheet( "Rotation Functions", self.rotation_functions_tab, "gui/silkicons/arrow_refresh", false, false )
-	self.panel:AddSheet( "Constraints", self.constraints_tab, "gui/silkicons/anchor", false, false )
+    self.panel:AddSheet( "Display Options", self.displays_tab, "icon16/picture_edit.png", false, false )
+    self.panel:AddSheet( "Points", self.points_tab, "icon16/add.png", false, false )
+        self.points_tab.tab = self.panel.Items[2].Tab
+    self.panel:AddSheet( "Lines", self.lines_tab, "icon16/tick.png", false, false )
+        self.lines_tab.tab = self.panel.Items[3].Tab
+    self.panel:AddSheet( "Planes", self.planes_tab, "icon16/world.png", false, false )
+        self.planes_tab.tab = self.panel.Items[4].Tab
+    self.panel:AddSheet( "Move Constructs", self.move_tab, "icon16/folder_go.png", false, false )
+    self.panel:AddSheet( "Functions", self.functions_tab, "icon16/plugin.png", false, false )
+    self.panel:AddSheet( "Rotation", self.rotation_tab, "icon16/arrow_refresh.png", false, false )
+    self.panel:AddSheet( "Rotation Functions", self.rotation_functions_tab, "icon16/arrow_refresh.png", false, false )
+    self.panel:AddSheet( "Constraints", self.constraints_tab, "icon16/anchor.png", false, false )
 	
 	
 	// Help button
